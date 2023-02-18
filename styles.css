@@ -1,7 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
-body {
-    font-family: 'Inter', sans-serif;
+* {
     font-size: 62.5%;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-icon {
+    margin-left: 1rem;
+}
+
+header .menu-icon {
+    margin-right: 1rem;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.first-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-card .first-card img {
+    width: 100%;
+}
+
+.main-card .first-card h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin: 1rem 0;
+}
+
+.main-card .first-card p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.main-card .first-card a {
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    height: 2.5rem;
+    width: 10rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.3rem;
+}
+
+.main-card .black-pages-card {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    padding: 0 1rem;
+    margin-top: 3rem;
+}
+
+.main-card .black-pages-card h2 {
+    color: hsl(35, 77%, 62%);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.main-card .black-pages-card h3 {
+    font-size: 1rem;
+    
+}
+
+.main-card .black-pages-card p {
+    font-size: 1.5em;
+    font-weight: 400;
+}
