@@ -8,25 +8,34 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-header {
+.mobile-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo-icon {
-    margin-left: 1rem;
+.mobile-header .logo-icon {
+    display: flex;
+    margin: 2rem 0;
+    margin-left: 1.5rem;
+    height: 1.8rem;
 }
 
-header .menu-icon {
-    margin-right: 1rem;
+.mobile-header .menu-icon {
+    display: flex;
+    margin-right: 1.5rem;
+    width: 2.5rem;
+}
+
+.desktop-header {
+    display: none;
 }
 
 .main-card {
     display: flex;
     flex-direction: column;
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 
 .first-card {
@@ -39,7 +48,7 @@ header .menu-icon {
 }
 
 .main-card .first-card h1 {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     font-weight: 800;
     margin: 1rem 0;
 }
@@ -55,7 +64,7 @@ header .menu-icon {
     background-color: hsl(5, 85%, 63%);
     color: hsl(36, 100%, 99%);
     font-weight: 400;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-top: 1rem;
     height: 2.5rem;
     width: 10rem;
@@ -69,22 +78,101 @@ header .menu-icon {
 .main-card .black-pages-card {
     background-color: hsl(240, 100%, 5%);
     color: hsl(36, 100%, 99%);
-    padding: 0 1rem;
+    padding: 0 1rem 1rem;
     margin-top: 3rem;
 }
 
 .main-card .black-pages-card h2 {
     color: hsl(35, 77%, 62%);
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    margin-bottom: -0.3rem;
 }
 
 .main-card .black-pages-card h3 {
     font-size: 1rem;
-    
+    font-weight: 700;
+    color: hsl(36, 100%, 99%);
 }
 
 .main-card .black-pages-card p {
-    font-size: 1.5em;
-    font-weight: 400;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: hsl(236, 13%, 42%);
 }
+
+.main-card .black-pages-card .black-card-one {
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+    padding: 1rem 0;
+}
+
+.main-card .black-pages-card .black-card-two {
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+    padding: 1rem 0;
+}
+
+
+
+.blog-pages-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 4rem 1.5rem 0 1.5rem;
+}
+
+.blog-pages-card .individual-page-card {
+    display: grid;
+    grid-template-areas:
+        "img number number"
+        "img title title"
+        "img text text";
+    column-gap: 1rem;
+    width: 100%;
+    max-width: 222px;
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.blog-pages-card .individual-page-card img {
+    grid-area: img;
+    grid-row: span 3;
+    width: 100%;
+    
+}
+
+.blog-pages-card .individual-page-card h2 {
+    grid-area: number;
+    display: inline;
+    color: hsl(233, 8%, 79%);
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.blog-pages-card .individual-page-card h3 {
+    grid-area: title;
+    display: flex;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0.3rem 0 0;
+}
+
+.blog-pages-card .individual-page-card p {
+    grid-area: text;
+    font-size: 0.9rem;
+    margin: 0;
+    margin-bottom: 1.6rem;
+    line-height: 1.6;
+}
+
+
+footer {
+    margin-bottom: 1rem;
+}
+/* footer {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1rem;
+    bottom: 0;
+    left: 0;
+} */
