@@ -43,8 +43,12 @@ body {
     flex-direction: column;
 }
 
-.main-card .first-card img {
+.main-card .first-card .mobile.img {
     width: 100%;
+}
+
+.main-card .first-card .desktop-img {
+    display: none;
 }
 
 .main-card .first-card h1 {
@@ -168,11 +172,111 @@ body {
 footer {
     margin-bottom: 1rem;
 }
-/* footer {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 1rem;
-    bottom: 0;
-    left: 0;
-} */
+
+
+@media (min-width: 768px) {
+    
+
+    .mobile-header {
+        display: none;
+    }
+
+    .desktop-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1220px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem;
+    }
+
+    .desktop-header .logo-icon {
+        width: 5rem;
+    }
+
+    .desktop-header .header-button {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .desktop-header .header-button a {
+        display: flex;
+        color: hsl(233, 8%, 79%);
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-decoration: none;
+        padding-left: 1.5rem;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+
+    .main-card {
+        display: flex;
+        flex-direction: row;
+        max-width: 1220px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    .main-card .first-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        padding-right: 1.5rem;
+        width: 80%;
+    }
+
+    .main-card .first-card .desktop-img {
+        display: grid;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        width: 100%;
+    }
+
+    .main-card .first-card h1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        height: auto;
+        font-size: 6rem;
+    }
+
+    .main-card .first-card p {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        height: 100%;
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .main-card .first-card a {
+        height: 5rem;
+        width: 20rem;
+        margin-top: -6rem;
+        grid-column: 2;
+        grid-row: 3;
+        font-size: 1.5rem;
+    }
+
+    .main-card .black-pages-card {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .main-card .black-pages-card h2 {
+        font-size: 3rem;
+    }
+
+    .main-card .black-pages-card .black-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .main-card .black-pages-card .black-card p {
+        font-size: 1.5rem;
+    }
+}
+
