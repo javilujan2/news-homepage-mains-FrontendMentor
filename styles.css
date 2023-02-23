@@ -28,6 +28,32 @@ body {
     width: 2.5rem;
 }
 
+header .mobile-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 1.5rem;
+    top: 2rem;
+    padding-bottom: 10rem;
+    background-color: hsl(36, 100%, 99%);
+}
+
+header .mobile-menu img {
+    width: 3rem;
+    margin-bottom: 4rem;
+    margin-left: auto;
+}
+
+header .mobile-menu a {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    padding-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 6rem;
+}
+
 .desktop-header {
     display: none;
 }
@@ -174,7 +200,7 @@ footer {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     
 
     .mobile-header {
@@ -188,11 +214,11 @@ footer {
         align-items: center;
         max-width: 1220px;
         margin: 0 auto;
-        padding: 3rem 1.5rem;
+        padding: 5rem 1.5rem;
     }
 
     .desktop-header .logo-icon {
-        width: 5rem;
+        width: 8rem;
     }
 
     .desktop-header .header-button {
@@ -204,10 +230,14 @@ footer {
     .desktop-header .header-button a {
         display: flex;
         color: hsl(233, 8%, 79%);
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 400;
         text-decoration: none;
-        padding-left: 1.5rem;
+        padding-left: 4rem;
+    }
+
+    .desktop-header .header-button a:hover {
+        color: hsl(5, 85%, 63%);
     }
 
     .mobile-img {
@@ -226,8 +256,8 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2, auto);
-        padding-right: 1.5rem;
-        width: 80%;
+        padding-right: 3rem;
+        width: 100%;
     }
 
     .main-card .first-card .desktop-img {
@@ -242,6 +272,7 @@ footer {
         grid-row: 2 / 3;
         height: auto;
         font-size: 6rem;
+        margin-top: 2.5rem;
     }
 
     .main-card .first-card p {
@@ -249,7 +280,7 @@ footer {
         grid-row: 2 / 3;
         height: 100%;
         font-size: 1.5rem;
-        margin-top: 1.5rem;
+        margin-top: 2.5rem;
     }
 
     .main-card .first-card a {
@@ -261,22 +292,73 @@ footer {
         font-size: 1.5rem;
     }
 
+    .main-card .first-card a:hover {
+        background-color: hsl(240, 100%, 5%);
+    }
+
     .main-card .black-pages-card {
         display: flex;
         flex-direction: column;
         margin: 0;
+        padding: 2rem;
     }
 
     .main-card .black-pages-card h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
+        padding-bottom: 2rem;
     }
 
     .main-card .black-pages-card .black-card h3 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     .main-card .black-pages-card .black-card p {
         font-size: 1.5rem;
+        line-height: 2;
     }
+
+    .blog-pages-card {
+        max-width: 1220px;
+        margin: 0 auto;
+        padding-top: 6rem;
+    }
+
+    .blog-pages-card .individual-page-card {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: fit-content;
+        max-height: 6rem;
+    }
+
+    .blog-pages-card .individual-page-card img {
+        width: auto;
+        height: 15rem;
+        padding-right: 2rem;
+    }
+
+    .blog-pages-card .individual-page-card h2 {
+        font-size: 4rem;
+        align-items: end;
+    }
+
+    .blog-pages-card .individual-page-card h3 {
+        font-size: 2rem;
+    }
+
+    .blog-pages-card .individual-page-card h3:hover {
+        color: hsl(5, 85%, 63%);
+    }
+
+    .blog-pages-card .individual-page-card p {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+    }
+
 }
 
